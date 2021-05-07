@@ -1,268 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка</title>
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&family=Oswald&family=PT+Sans+Narrow&family=Raleway&family=Roboto&family=Roboto+Slab&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="..//Html tags part 2/css/style.css">
+	<!--Заголовок страницы-->
+	<title>Выполнение домашнего задания</title>
 </head>
 
 <body>
-
-	<style>
-		/*Обнуление*/
-		* {
-			padding: 0;
-			margin: 0;
-			border: 0;
-		}
-
-		*,
-		*:before,
-		*:after {
-			-moz-box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-		}
-
-		:focus,
-		:active {
-			outline: none;
-		}
-
-		a:focus,
-		a:active {
-			outline: none;
-		}
-
-		nav,
-		footer,
-		header,
-		aside {
-			display: block;
-		}
-
-		html,
-		body {
-			height: 100%;
-			width: 100%;
-			font-size: 100%;
-			line-height: 1;
-			font-size: 14px;
-			-ms-text-size-adjust: 100%;
-			-moz-text-size-adjust: 100%;
-			-webkit-text-size-adjust: 100%;
-		}
-
-		input,
-		button,
-		textarea {
-			font-family: inherit;
-		}
-
-		input::-ms-clear {
-			display: none;
-		}
-
-		button {
-			cursor: pointer;
-		}
-
-		button::-moz-focus-inner {
-			padding: 0;
-			border: 0;
-		}
-
-		a,
-		a:visited {
-			text-decoration: none;
-		}
-
-		a:hover {
-			text-decoration: none;
-		}
-
-		ul li {
-			list-style: none;
-		}
-
-		img {
-			vertical-align: top;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-size: inherit;
-			font-weight: inherit;
-		}
-
-		/*--------------------*/
-
-		body {
-			background-color: #e8e8e8;
-		}
-
-		.content {
-			padding: 125px 0px 137px 0px;
-			max-width: 741px;
-			margin: 0px auto;
-		}
-
-		.content-top {
-			text-align: center;
-			margin: 0px 0px 65px 0px;
-		}
-
-		.content-top__category {
-			opacity: 0.6;
-			color: #273d46;
-			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-			margin: 0px 0px 15px 0px;
-			text-transform: uppercase;
-			letter-spacing: 2.8px;
-		}
-
-		.content-top__title {
-			color: #273d46;
-			font-size: 36px;
-			line-height: 50px;
-		}
-
-		.content-image {
-			box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15);
-			background-color: aliceblue;
-			padding: 10px;
-			margin: 0px 0px 85px 0px;
-		}
-
-		.content-image img {
-			max-width: 100%;
-		}
-
-		.content-bottom {
-			padding: 0px 45px;
-		}
-
-		.content-bottom__text {
-			color: #53646b;
-			font-size: 24px;
-			line-height: 40px;
-		}
-
-		.content-bottom__text p {
-			margin: 0px 0px 40px 0px;
-		}
-
-		.content-bootom-info-list li {
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 20px;
-			color: #273d46;
-			margin: 0px 0px 35px 0px;
-			background: url(..//img/e29c85.png) no-repeat;
-			padding: 0px 0px 0px 30px;
-		}
-
-		.content-bootom-info-list li:nth-child(1) {
-			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-			color: #273d46;
-		}
-
-		.content-bootom-info-list li:nth-child(2) {
-			color: #80b7b3;
-			font-style: italic;
-		}
-
-		.content-bootom-info-list li:nth-child(3) {
-			font-weight: 700;
-			color: #273d46;
-		}
-
-		.content-bootom-info-list li:nth-child(4) {
-			color: #273d46;
-			text-decoration: line-through;
-		}
-
-		.content-bootom-info-list li :nth-child(4) span {
-			opacity: 0.3;
-		}
-
-		.content-bootom-info-list {
-			margin: 0px 0px 59px 0px;
-		}
-
-		.content-bottom-info__link {
-			display: inline-block;
-			line-height: 44px;
-			border-radius: 20px;
-			height: 44px;
-			padding: 0px 30px;
-			background-color: #80b7b3;
-			-webkit-box-shadow: 5px 5px 1px rgba(0, 0, 0, 5);
-			box-shadow: 5px 5px 5px rgba(0, 0, 0, 5);
-			font-family: Arial, Helvetica, sans-serif;
-			color: aliceblue;
-			font-size: 14px;
-			text-transform: uppercase;
-			letter-spacing: 2.8px;
-		}
-
-		.content-bottom-info__link span {
-			padding: 0px 30px 0px 0px;
-			background: url(..//img/f09f949e.png) right no-repeat;
-		}
-
-		.content-bottom-info__link:hover {
-			background-color: #e0370d;
-		}
-
-		.content-bottom-info__link:active {
-			position: relative;
-			top: 3px;
-			-webkit-box-shadow: 5px 5px 1px rgba(0, 0, 0, 5);
-			box-shadow: 5px 5px 5px rgba(0, 0, 0, 5);
-		}
-	</style>
-
-	<!-- Ограничивающий контейнер -->
-	<div class="content">
-		<div class="content-top">
-			<div class="content-top__category">Здорова Нигер</div>
-			<h1 class="content-top__title">Хочешь доебаться? </h1>
-		</div>
-		<div class="content-image">
-			<div class="content-image__item">
-				<img
-					src="https://sun9-19.userapi.com/impg/gwfuhkqjkSx-_UL5pB33rK8IXgRp_L2hvUFoZw/KAS2zAPryPM.jpg?size=714x960&quality=96&sign=afd5018d7824d709d7acc1fbcd0b01da&type=album"
-					alt="">
+	<div class="wrapper">
+		<div class="content">
+			<div class="content__title">
+				<p>Linux</p>
+				<p>Глазами</p>
+				<p>Хакера</p>
 			</div>
-		</div>
-		<div class="content-bottom">
-			<div class="content-bottom__text">
-				<p>Многие спрашивают меня почему у меня нет соперников.Но ответ очень прост</p>
-				<p>Я уничтожаю их со всей силы.</p>
+			<div class="sub__title">
+				<p>4-е издание</p>
+				<p>Михаил Флеонов</p>
 			</div>
-			<div class="content-bootom-info">
-				<ul class="content-bootom-info-list">
-
-					<li>Никогда не становитесь моим врагом</li>
-					<li>Не наряжайте ёлку без моего разрешения</li>
-					<li>Не смей трогать мое пиво</li>
-					<li><span>Или я потрогаю тебя</span></li>
+			<div class="content__list">
+				<ul class="list">
+					<li>Безопасность Linux</li>
+					<li>Оптимизация ОС и сервисов</li>
+					<li>Атаки хакеров на Linux</li>
+					<li>Защита сервера от хакеров</li>
+					<li>Предотвращение возможных атак</li>
 				</ul>
-
-				<a target="_blank" href="https://i.makeagif.com/media/9-24-2015/0BEL5B.gif"
-					class="content-bottom-info__link"><span>Отправить сообщение
-					</span></a>
-
 			</div>
 		</div>
 	</div>
-
 </body>
 
 </html>
